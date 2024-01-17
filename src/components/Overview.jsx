@@ -1,19 +1,16 @@
 import vid from '../assets/video-preview-okr-portfolio.png';
+import Header from './Header';
 
 const Overview = () => {
   return (
     <section className="w-full h-screen bg-white text-black mt-32">
       <main className="w-[1240px] mx-auto">
-        <header className="w-[1300px] h-auto mx-auto">
-          <h1 className="text-center text-4xl font-bold tracking-wide">
-            Drive efficiency across all departments
-          </h1>
-          <p className="tracking-wide mx-auto text-center text-lg text-gray-500 font-light w-[60%] mt-10">
-            Wrike streamlines work processes for maximum efficiency, empowering
-            teams across all departments to collaborate, manage projects, drive
-            strategic initiatives, and achieve goals.
-          </p>
-        </header>
+        <Header
+          h1="Drive efficiency across all departments"
+          p="Wrike streamlines work processes for maximum efficiency, empowering
+        teams across all departments to collaborate, manage projects, drive
+        strategic initiatives, and achieve goals."
+        />
 
         <div className="grid grid-cols-3 w-full mx-auto mt-36 h-screen">
           <div className="flex flex-col p-6 ">

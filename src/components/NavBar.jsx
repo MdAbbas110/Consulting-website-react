@@ -1,10 +1,35 @@
 import WrikeLogo from '../assets/wrike-logo-light.svg';
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import { IoEarthOutline } from 'react-icons/io5';
+import { useEffect, useState } from 'react';
 
 const NavBar = () => {
+  const [navbarBg, setNavbarBg] = useState('bg-green-100'); // Initial color
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+
+      // Adjust the scroll threshold as needed
+      const isScrolled = scrollTop > 50;
+
+      // Update navbar background color based on scroll position
+      setNavbarBg(isScrolled ? 'bg-white' : 'bg-green-100');
+    };
+
+    // Attach scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <section className="w-full bg-[#EBF5F3] py-4 sticky top-0 ">
+    <section
+      className={`transition-all duration-300 ease-in-out sticky top-0 z-50 ${navbarBg}`}
+    >
       <nav className="max-w-[1240px] mx-auto text-base font-medium">
         <div className="flex justify-between items-center">
           <img src={WrikeLogo} alt="" />
