@@ -3,7 +3,7 @@ import Header from './Header';
 
 const Overview = () => {
   return (
-    <section className="w-full h-screen bg-white text-black mt-32 mb-44">
+    <section className="w-full h-auto bg-white text-black mt-32 mb-44">
       <main className="w-[1240px] mx-auto">
         <Header
           h1="Drive efficiency across all departments"

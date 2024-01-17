@@ -1,4 +1,5 @@
 import './App.css';
+import Dashboard from './components/Dashboard';
 import Heading from './components/Heading';
 import Hero from './components/Hero';
 import NavBar from './components/NavBar';
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Overview />
       <Team />
+      <Dashboard />
     </>
   );
 }

@@ -4,6 +4,7 @@ import img1 from '../assets/evo-icp-hp-it-light.png';
 import img2 from '../assets/evo-icp-hp-marketing-light.png';
 import img3 from '../assets/evo-icp-hp-pm-light.png';
 import img4 from '../assets/evo-icp-hp-ps-light.png';
+import ButtonArrow from './ButtonArrow';
 
 const Team = () => {
   return (
@@ -50,6 +51,7 @@ const Team = () => {
           img={img1}
         />
       </div>
+      <ButtonArrow />
     </section>
   );
 };
