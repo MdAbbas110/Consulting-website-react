@@ -28,7 +28,7 @@ const NavBar = () => {
 
   return (
     <section
-      className={`transition-all duration-300 ease-in-out sticky top-0 z-50 ${navbarBg}`}
+      className={`transition-all duration-300 ease-in-out sticky top-0 z-50 ${navbarBg} shadow-lg`}
     >
       <nav className="max-w-[1240px] mx-auto text-base font-medium">
         <div className="flex justify-between items-center">

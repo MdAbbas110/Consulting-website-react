@@ -3,7 +3,7 @@ import Header from './Header';
 
 const Overview = () => {
   return (
-    <section className="w-full h-screen bg-white text-black mt-32">
+    <section className="w-full h-screen bg-white text-black mt-32 mb-44">
       <main className="w-[1240px] mx-auto">
         <Header
           h1="Drive efficiency across all departments"
@@ -12,7 +12,7 @@ const Overview = () => {
         strategic initiatives, and achieve goals."
         />
 
-        <div className="grid grid-cols-3 w-full mx-auto mt-36 h-screen">
+        <div className="grid grid-cols-3 gap-8 w-full mx-auto mt-36">
           <div className="flex flex-col p-6 ">
             <h1 className="text-4xl font-bold tracking-wide">
               Improve visibility and alignment
@@ -31,8 +31,8 @@ const Overview = () => {
               Start Free trail
             </button>
           </div>
-          <div className="col-span-2 ">
-            <img className="ml-40 h-[60%] w-[75%]" src={vid} alt="image" />
+          <div className="col-span-2 mx-auto">
+            <img className="ml-20 w-[45rem] " src={vid} alt="image" />
           </div>
         </div>
       </main>
