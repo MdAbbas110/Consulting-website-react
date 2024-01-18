@@ -13,7 +13,7 @@ const ButtonArrow = () => {
         >
           Load more
         </a>
-        <FaArrowRightLong size={25} />
+        <FaArrowRightLong size={22} color="green" />
       </div>
     </div>
   );

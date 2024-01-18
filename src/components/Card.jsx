@@ -2,7 +2,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 const Card = ({ head, para, img }) => {
   return (
-    <main className="bg-[#F0F2F7] rounded-lg shadow-md hover:scale-110 transition-all duration-300 ease-in-out">
+    <main className="bg-[#F0F2F7] rounded-lg shadow-md hover:scale-110 border-2 hover:border-green-800 transition-all duration-300 ease-in-out">
       <div className="p-8 mx-auto">
         <img className="w-52 h-32" src={img} alt="/" />
         <div className="mt-10 mx-auto flex flex-col gap-6">
@@ -17,7 +17,7 @@ const Card = ({ head, para, img }) => {
             >
               Load more
             </a>
-            <FaArrowRightLong size={25} />
+            <FaArrowRightLong size={20} color="green" />
           </div>
         </div>
       </div>
