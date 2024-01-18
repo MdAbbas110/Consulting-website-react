@@ -11,6 +11,7 @@ import Img from '../assets/product-screenshot-board-gantt-views.png';
 import bgImg from '../assets/feature-bg-2-default.png';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import JumpStart from './JumpStart';
+import PowerfulEnter from './PowerfulEnter';
 
 const Dashboard = () => {
   return (
@@ -86,6 +87,7 @@ const Dashboard = () => {
       </main>
 
       <JumpStart />
+      <PowerfulEnter />
     </section>
   );
 };

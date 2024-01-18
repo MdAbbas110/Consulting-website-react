@@ -1,27 +1,29 @@
-import Card from './Card';
-import Header from './Header';
-import img1 from '../assets/evo-icp-hp-it-light.png';
-import img2 from '../assets/evo-icp-hp-marketing-light.png';
-import img3 from '../assets/evo-icp-hp-pm-light.png';
-import img4 from '../assets/evo-icp-hp-ps-light.png';
-import ButtonArrow from './ButtonArrow';
+import Card from "./Card";
+import Header from "./Header";
+import img1 from "../assets/evo-icp-hp-it-light.png";
+import img2 from "../assets/evo-icp-hp-marketing-light.png";
+import img3 from "../assets/evo-icp-hp-pm-light.png";
+import img4 from "../assets/evo-icp-hp-ps-light.png";
+import ButtonArrow from "./ButtonArrow";
 
 const Team = () => {
   return (
-    <section className="w-full h-screen ">
+    <section className="h-screen w-full">
       <Header
         h1="Transform the way you work"
         p="Empower teams and departments to do the best work of their lives with 360° visibility, true cross-functional collaboration, and powerful automation."
       />
 
-      <div className="w-[1240px] grid grid-cols-4 gap-8 mx-auto mt-16">
+      <div className="mx-auto mt-16 grid w-[1240px] grid-cols-4 gap-8">
         <Card
+          backG="gray"
           head="Marketing and creative"
           para="Create high-performing campaigns with custom workflows, DAM tools, and dynamic reports."
           img={img2}
         />
 
         <Card
+          backG="green"
           head="Professional
           Services"
           para="Manage resources, track
@@ -32,6 +34,7 @@ const Team = () => {
         />
 
         <Card
+          backG="gray-400"
           head="Project
           Management"
           para="Improve collaboration with
@@ -42,6 +45,7 @@ const Team = () => {
         />
 
         <Card
+          backG="gray-400"
           head="IT and Engineering"
           para="Optimize agile IT workflows
           - manage strategic

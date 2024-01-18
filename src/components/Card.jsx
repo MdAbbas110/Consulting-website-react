@@ -1,18 +1,27 @@
-import { FaArrowRightLong } from 'react-icons/fa6';
+import { FaArrowRightLong } from "react-icons/fa6";
+import classnames from "classnames";
 
-const Card = ({ head, para, img }) => {
+const Card = ({ head, para, img, p, backG }) => {
+  const cardClass = classnames(
+    `bg-${backG} rounded-lg shadow-md hover:scale-110 border-2 hover:border-green-800 transition-all duration-300 ease-in-out`,
+  );
+  console.log(backG);
   return (
-    <main className="bg-[#F0F2F7] rounded-lg shadow-md hover:scale-110 border-2 hover:border-green-800 transition-all duration-300 ease-in-out">
-      <div className="p-8 mx-auto">
-        <img className="w-52 h-32" src={img} alt="/" />
-        <div className="mt-10 mx-auto flex flex-col gap-6">
+    <main className={cardClass}>
+      <div className="mx-auto p-8">
+        <img className="" src={img} alt="/" />
+        <div className="bg-gray mx-auto mt-10 flex flex-col gap-6">
           <h1 className="text-2xl font-semibold tracking-wide">{head}</h1>
-          <p className="text-lg text-gray-500 font-normal tracking-wide">
+          <p className="text-lg font-normal tracking-wide text-gray-500">
             {para}
           </p>
-          <div className="flex gap-3 mt-9 items-center">
+          <p className="text-lg font-normal tracking-wide text-gray-500">
+            {" "}
+            {p}
+          </p>
+          <div className="mt-9 flex items-center gap-3">
             <a
-              className="text-xl tracking-wide text-green-800 font-semibold"
+              className="text-xl font-semibold tracking-wide text-green-800"
               href="#"
             >
               Load more
