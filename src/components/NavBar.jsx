@@ -1,10 +1,10 @@
-import WrikeLogo from '../assets/wrike-logo-light.svg';
-import { RiArrowDropDownLine } from 'react-icons/ri';
-import { IoEarthOutline } from 'react-icons/io5';
-import { useEffect, useState } from 'react';
+import WrikeLogo from "../assets/wrike-logo-light.svg";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { IoEarthOutline } from "react-icons/io5";
+import { useEffect, useState } from "react";
 
 const NavBar = () => {
-  const [navbarBg, setNavbarBg] = useState('bg-green-100'); // Initial color
+  const [navbarBg, setNavbarBg] = useState("bg-green-100"); // Initial color
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,24 +14,24 @@ const NavBar = () => {
       const isScrolled = scrollTop > 50;
 
       // Update navbar background color based on scroll position
-      setNavbarBg(isScrolled ? 'bg-white' : 'bg-green-100');
+      setNavbarBg(isScrolled ? "bg-white" : "bg-green-100");
     };
 
     // Attach scroll event listener
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <section
-      className={`transition-all duration-300 ease-in-out sticky top-0 z-50 ${navbarBg} shadow-lg`}
+      className={`sticky top-0 z-50 transition-all duration-300 ease-in-out ${navbarBg} shadow-lg`}
     >
-      <nav className="max-w-[1240px] mx-auto text-base font-medium">
-        <div className="flex justify-between items-center">
+      <nav className="mx-auto max-w-[1240px] text-base font-medium">
+        <div className="flex items-center justify-between">
           <img src={WrikeLogo} alt="" />
           <div className="flex items-center hover:bg-white">
             <a href="#">Why Wrike? </a> <RiArrowDropDownLine size={25} />
@@ -56,10 +56,10 @@ const NavBar = () => {
             <IoEarthOutline size={15} />
             <a href="#"> EN</a>
           </div>
-          <a className="text-[#007860] text-[1.2rem]" href="#">
+          <a className="text-[1.2rem] text-[#007860]" href="#">
             log in
           </a>
-          <button className="py-2 px-3 bg-[#04BA71] text-white rounded-md hover:bg-[#007860]">
+          <button className="rounded-md bg-[#04BA71] px-3 py-2 text-white hover:bg-[#007860]">
             Start a free Trail
           </button>
         </div>
