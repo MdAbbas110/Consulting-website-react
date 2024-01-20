@@ -19,7 +19,7 @@ const NewsLetter = () => {
           <div className="mt-20 flex gap-6">
             <input
               className="rounded-xl px-20 py-3 text-lg text-black"
-              placeholder="Enter your business email"
+              placeholder="Enter Business Email"
               type="text"
             />
             <button className="rounded-xl bg-[#04BA71] px-8 py-4 text-base font-semibold text-white hover:bg-[#007860]">
