@@ -7,6 +7,7 @@ import Dashboard from "./components/Dashboard";
 import Collaborate from "./components/Collaborate";
 
 import MarqueeSection from "./components/Marquee";
+import StoryLine from "./components/StoryLine";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Dashboard />
       <Collaborate />
       <MarqueeSection />
+      <StoryLine />
     </>
   );
 }

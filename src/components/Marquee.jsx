@@ -7,6 +7,7 @@ import { TbArrowsRandom } from "react-icons/tb";
 import { MdSettingsSuggest } from "react-icons/md";
 import { MdVideoSettings } from "react-icons/md";
 import { MdOutlineSettingsInputAntenna } from "react-icons/md";
+import SmallMarqueeCard from "./SmallMarqueeCard";
 
 const MarqueeSection = () => {
   return (
@@ -19,73 +20,63 @@ const MarqueeSection = () => {
       </main>
 
       <div className="mt-16">
-        <Marquee speed={25} pauseOnHover gradient>
-          <div className="p-5">
-            <SmallCards
-              component={<RxSpeakerLoud size={25} color="red" />}
-              anchor="Marketing"
-            />
-          </div>
-          <div className="p-5">
-            <SmallCards
-              component={<MdSettingsSuggest size={25} color="green" />}
-              anchor="Project Management"
-            />
-          </div>
-          <div className="p-5">
-            <SmallCards
-              component={
-                <MdOutlineSettingsInputAntenna size={25} color="purple" />
-              }
-              anchor="Creative"
-            />
-          </div>
+        <Marquee speed={13} pauseOnHover gradient>
+          <SmallMarqueeCard
+            component={<RxSpeakerLoud size={25} color="red" />}
+            anchor="Marketing"
+          />
 
-          <div className="p-5">
-            <SmallCards
-              component={<MdVideoSettings size={25} color="orange" />}
-              anchor="Agile"
-            />
-          </div>
+          <SmallMarqueeCard
+            component={<MdSettingsSuggest size={25} color="green" />}
+            anchor="Project Management"
+          />
 
-          <div className="p-5">
-            <SmallCards
-              component={<TbArrowsRandom size={25} color="green" />}
-              anchor="Operations"
-            />
-          </div>
-          <div className="p-5">
-            <SmallCards
-              component={<IoPeople size={25} color="blue" />}
-              anchor="Support"
-            />
-          </div>
-          <div className="px-5 py-2">
-            <SmallCards
-              component={
-                <MdOutlineSettingsInputAntenna size={25} color="purple" />
-              }
-              anchor="Creative"
-            />
-          </div>
+          <SmallMarqueeCard
+            component={
+              <MdOutlineSettingsInputAntenna size={25} color="purple" />
+            }
+            anchor="Creative"
+          />
+
+          <SmallMarqueeCard
+            component={<MdVideoSettings size={25} color="orange" />}
+            anchor="Agile"
+          />
+
+          <SmallMarqueeCard
+            component={<TbArrowsRandom size={25} color="green" />}
+            anchor="Operations"
+          />
+
+          <SmallMarqueeCard
+            component={<IoPeople size={25} color="blue" />}
+            anchor="Support"
+          />
+
+          <SmallMarqueeCard
+            component={
+              <MdOutlineSettingsInputAntenna size={25} color="purple" />
+            }
+            anchor="Creative"
+          />
         </Marquee>
 
         {/* second marquee left to right  */}
 
-        <Marquee speed={10} pauseOnHover direction="right">
-          <div className="px-5 py-2">
+        <Marquee speed={25} pauseOnHover direction="right">
+          <div className="p-5">
             <SmallCards
               component={<RxSpeakerLoud size={25} color="red" />}
               anchor="Marketing"
             />
           </div>
-          <div className="px-5 py-2">
+          <div className="p-5">
             <SmallCards
               component={<MdSettingsSuggest size={25} color="green" />}
               anchor="Project Management"
             />
           </div>
-          <div className="px-5 py-2">
+          <div className="p-5">
             <SmallCards
               component={
                 <MdOutlineSettingsInputAntenna size={25} color="purple" />
@@ -94,20 +85,20 @@ const MarqueeSection = () => {
             />
           </div>
 
-          <div className="px-5 py-2">
+          <div className="p-5">
             <SmallCards
               component={<MdVideoSettings size={25} color="orange" />}
               anchor="Agile"
             />
           </div>
 
-          <div className="px-5 py-2">
+          <div className="p-5">
             <SmallCards
               component={<TbArrowsRandom size={25} color="green" />}
               anchor="Operations"
             />
           </div>
-          <div className="px-5 py-2">
+          <div className="p-5">
             <SmallCards
               component={<IoPeople size={25} color="blue" />}
               anchor="Support"
@@ -125,55 +116,45 @@ const MarqueeSection = () => {
 
         {/* Third marquee form right to left */}
 
-        <Marquee speed={25} pauseOnHover gradient>
-          <div className="p-5">
-            <SmallCards
-              component={<RxSpeakerLoud size={25} color="red" />}
-              anchor="Marketing"
-            />
-          </div>
-          <div className="p-5">
-            <SmallCards
-              component={<MdSettingsSuggest size={25} color="green" />}
-              anchor="Project Management"
-            />
-          </div>
-          <div className="p-5">
-            <SmallCards
-              component={
-                <MdOutlineSettingsInputAntenna size={25} color="purple" />
-              }
-              anchor="Creative"
-            />
-          </div>
+        <Marquee speed={13} pauseOnHover gradient>
+          <SmallMarqueeCard
+            component={<RxSpeakerLoud size={25} color="red" />}
+            anchor="Marketing"
+          />
 
-          <div className="p-5">
-            <SmallCards
-              component={<MdVideoSettings size={25} color="orange" />}
-              anchor="Agile"
-            />
-          </div>
+          <SmallMarqueeCard
+            component={<MdSettingsSuggest size={25} color="green" />}
+            anchor="Project Management"
+          />
 
-          <div className="p-5">
-            <SmallCards
-              component={<TbArrowsRandom size={25} color="green" />}
-              anchor="Operations"
-            />
-          </div>
-          <div className="p-5">
-            <SmallCards
-              component={<IoPeople size={25} color="blue" />}
-              anchor="Support"
-            />
-          </div>
-          <div className="px-5 py-2">
-            <SmallCards
-              component={
-                <MdOutlineSettingsInputAntenna size={25} color="purple" />
-              }
-              anchor="Creative"
-            />
-          </div>
+          <SmallMarqueeCard
+            component={
+              <MdOutlineSettingsInputAntenna size={25} color="purple" />
+            }
+            anchor="Creative"
+          />
+
+          <SmallMarqueeCard
+            component={<MdVideoSettings size={25} color="orange" />}
+            anchor="Agile"
+          />
+
+          <SmallMarqueeCard
+            component={<TbArrowsRandom size={25} color="green" />}
+            anchor="Operations"
+          />
+
+          <SmallMarqueeCard
+            component={<IoPeople size={25} color="blue" />}
+            anchor="Support"
+          />
+
+          <SmallMarqueeCard
+            component={
+              <MdOutlineSettingsInputAntenna size={25} color="purple" />
+            }
+            anchor="Creative"
+          />
         </Marquee>
       </div>
     </section>
