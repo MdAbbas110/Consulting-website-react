@@ -4,9 +4,9 @@ const NewsLetter = () => {
   return (
     <section className="w-full bg-[#181F38] pb-10 text-white">
       <main className="mx-auto w-[1240px]">
-        <div className="mx-auto w-[850px] grid-rows-3 p-20">
+        <div className="mx-auto w-[900px] grid-rows-3 p-20">
           <div className=" row-span-2">
-            <h1 className=" text-4xl font-semibold tracking-wide">
+            {/* <h1 className=" text-4xl font-semibold tracking-wide">
               {" "}
               Try our powerful work management software for free
             </h1>
@@ -14,9 +14,17 @@ const NewsLetter = () => {
             <p className="mt-8 text-lg font-medium  tracking-wide">
               Sign up for a free two-week trial of Wrike today — no credit card
               required.
-            </p>
+            </p> */}
+            <header className="mx-auto ">
+              <h1 className="text-center text-4xl font-bold tracking-wide">{`Try our powerful work management software for free`}</h1>
+              <p className="mx-auto mt-8  text-center text-base font-medium -tracking-[-0.1rem] ">
+                {
+                  "Sign up for a free two-week trial of Wrike today — no credit card required."
+                }
+              </p>
+            </header>
           </div>
-          <div className="mt-20 flex gap-6">
+          <div className="mt-20 flex justify-center gap-6">
             <input
               className="rounded-xl px-20 py-3 text-lg text-black"
               placeholder="Enter Business Email"

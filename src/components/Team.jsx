@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card2 from "./Card2";
 import Header from "./Header";
 import img1 from "../assets/evo-icp-hp-it-light.png";
 import img2 from "../assets/evo-icp-hp-marketing-light.png";
@@ -15,15 +15,13 @@ const Team = () => {
       />
 
       <div className="mx-auto mt-16 grid w-[1240px] grid-cols-4 gap-8">
-        <Card
-          backG="gray"
+        <Card2
           head="Marketing and creative"
           para="Create high-performing campaigns with custom workflows, DAM tools, and dynamic reports."
           img={img2}
         />
 
-        <Card
-          backG="green"
+        <Card2
           head="Professional
           Services"
           para="Manage resources, track
@@ -33,8 +31,7 @@ const Team = () => {
           img={img3}
         />
 
-        <Card
-          backG="gray-400"
+        <Card2
           head="Project
           Management"
           para="Improve collaboration with
@@ -44,8 +41,7 @@ const Team = () => {
           img={img4}
         />
 
-        <Card
-          backG="gray-400"
+        <Card2
           head="IT and Engineering"
           para="Optimize agile IT workflows
           - manage strategic
