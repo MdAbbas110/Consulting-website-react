@@ -1,8 +1,10 @@
 const Header = ({ h1, p }) => {
   return (
-    <header className="w-[1240px] h-auto mx-auto mt-28 pt-8">
-      <h1 className="text-center text-5xl font-bold tracking-wide">{h1}</h1>
-      <p className="tracking-wide mx-auto text-center text-lg text-gray-500 font-light w-[60%] mt-8">
+    <header className="mx-auto mt-28 h-auto pt-8 md:w-[1240px]">
+      <h1 className="text-center text-2xl font-bold tracking-wide md:text-5xl">
+        {h1}
+      </h1>
+      <p className="mx-auto mt-8 w-[60%] text-center text-lg font-light tracking-wide text-gray-500">
         {p}
       </p>
     </header>

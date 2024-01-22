@@ -10,7 +10,7 @@ const Footer = () => {
   const guid = guides;
   return (
     <>
-      <section className="hidden  bg-[#0C3245] p-36 md:block">
+      <footer className="hidden  bg-[#0C3245] p-36 lg:block">
         <main className="mx-auto grid w-[1240px] grid-cols-6 gap-8  px-4 py-16">
           <div className="">
             <FooterItems h1="Product" list={[items]} />
@@ -33,8 +33,8 @@ const Footer = () => {
             </div>
           </div>
         </main>
-      </section>
-      <section className="bg-[#0C3245] p-4 md:hidden">
+      </footer>
+      <section className="bg-[#0C3245] p-4 lg:hidden">
         <FooterAccordion title={"Product"} list={[items]} />
         <FooterAccordion title={"Solution"} list={[items]} />
         <FooterAccordion title={"Resources"} list={[items]} />
