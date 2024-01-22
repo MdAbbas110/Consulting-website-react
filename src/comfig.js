@@ -14,21 +14,22 @@ export const solutions = [
   "All Teams",
   "Marketing",
   "Creative",
-  "Project Management",
-  "Product Development",
-  "Business Operations",
-  "Professional Services",
+  "Product ",
+  "Business ",
+  "Project ",
+  "Professional ",
   "Students",
 ];
 
 export const resource = [
   "Help Center",
-  "Community",
+
   "Webinars",
-  "Interactive Training",
+  "Interactive ",
   "Support",
   "Google project",
   "management tools",
+  "Community",
 ];
 
 export const company = [

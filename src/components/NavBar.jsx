@@ -4,7 +4,7 @@ import { IoEarthOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
 
 const NavBar = () => {
-  const [navbarBg, setNavbarBg] = useState("bg-green-100"); // Initial color
+  const [navbarBg, setNavbarBg] = useState("bg-transparent"); // Initial color
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,7 +14,7 @@ const NavBar = () => {
       const isScrolled = scrollTop > 50;
 
       // Update navbar background color based on scroll position
-      setNavbarBg(isScrolled ? "bg-white" : "bg-green-100");
+      setNavbarBg(isScrolled ? "bg-white" : "bg-transparent");
     };
 
     // Attach scroll event listener

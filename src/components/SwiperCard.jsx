@@ -1,7 +1,7 @@
 // Import Swiper styles
 import "swiper/css";
 
-const SwiperCard = ({ img, para, para2, center }) => {
+const SwiperCard = ({ img, para, para2 }) => {
   return (
     <section className="mb-16 mt-20 w-full">
       <main className="mx-auto w-[1300px]">
