@@ -1,14 +1,14 @@
-import { FaArrowRightLong } from 'react-icons/fa6';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const ButtonArrow = () => {
   return (
-    <div className="w-[1240px] mx-auto flex gap-8 items-center justify-center mt-20">
-      <button className="py-4 px-8 font-semibold text-base text-white bg-[#04BA71] rounded-md hover:bg-[#007860]">
+    <div className="mx-auto mt-20 flex flex-col items-center justify-center gap-8 md:flex md:w-[1240px]">
+      <button className="rounded-md bg-[#04BA71] px-8 py-4 text-base font-semibold text-white hover:bg-[#007860]">
         Start Free trail
       </button>
-      <div className="flex gap-3  items-center">
+      <div className="flex items-center  gap-3">
         <a
-          className="text-xl tracking-wide text-green-800 font-semibold"
+          className="text-xl font-semibold tracking-wide text-green-800"
           href="#"
         >
           Load more

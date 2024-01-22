@@ -8,8 +8,8 @@ const Card = ({ head, para, img }) => {
 
   return (
     <main className={cardClass}>
-      <div className="mx-auto p-8">
-        <img className="" src={img} alt="/" />
+      <div className="mx-auto p-8 ">
+        <img className="w-56 md:w-auto" src={img} alt="/" />
         <div className="bg-gray mx-auto mt-10 flex flex-col gap-6">
           <h1 className="text-2xl font-semibold tracking-wide">{head}</h1>
           <p className="text-lg font-normal tracking-wide text-gray-500">

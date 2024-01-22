@@ -13,7 +13,7 @@ const NewsLetter = () => {
               </p>
             </header>
           </div>
-          <div className="mt-20 flex flex-col justify-center gap-6 md:flex">
+          <div className="mt-20 flex flex-col justify-center gap-6 md:flex-row">
             <input
               className="rounded-xl px-20 py-3 text-lg text-black"
               placeholder="Enter Business Email"

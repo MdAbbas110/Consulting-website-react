@@ -8,13 +8,13 @@ import ButtonArrow from "./ButtonArrow";
 
 const Team = () => {
   return (
-    <section className="h-screen w-full">
+    <section className="h-auto w-full md:h-screen">
       <Header
         h1="Transform the way you work"
-        p="Empower teams and departments to do the best work of their lives with 360° visibility, true cross-functional collaboration, and powerful automation."
+        p="Empower teams and departments to do the best work of their lives with 360° , true cross-functional collaboration, and powerful automation."
       />
 
-      <div className="mx-auto mt-16 grid w-[1240px] grid-cols-4 gap-8">
+      <div className="mx-auto mt-16 flex h-auto flex-col gap-16 p-10 md:grid md:w-[1240px] md:grid-cols-4 md:gap-8">
         <Card2
           head="Marketing and creative"
           para="Create high-performing campaigns with custom workflows, DAM tools, and dynamic reports."

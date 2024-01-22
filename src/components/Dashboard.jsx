@@ -15,19 +15,20 @@ import PowerfulEnter from "./PowerfulEnter";
 
 const Dashboard = () => {
   return (
-    <section className="mt-8 h-auto w-full bg-[#EBEDF5] pb-24">
-      <main className="mx-auto mt-12 w-[1240px]">
+    <section className="mt-60 h-auto w-full bg-[#EBEDF5] pb-24 md:mt-8">
+      <main className="mx-auto mt-12 md:w-[1240px]">
         <Header
           h1="The Most Versatile Work Management Platform™"
-          p={`Maximize your team’s performance, accelerate growth, and improve customer experience with unique and extensive customization features that makes work seamless for any team or department.`}
+          p={`Maximize your team’s performance, accelerate growth, and improve customer experience with unique and extensive features that makes work seamless for any team or department.`}
         />
-        <div className="mx-auto mt-20 flex items-center justify-around border-b-2 border-b-gray-500 ">
+        <div className=" mx-auto mt-12 flex cursor-pointer flex-col pl-32 md:mt-20 md:flex-row md:items-center md:justify-around md:border-b-2 md:border-b-gray-500 md:pl-0 ">
           <Tabs logo={<GrMonitor size={20} color="purple" />} text="View" />
           <Tabs
             logo={<TbSettingsAutomation size={20} color="green" />}
             text="Automation "
           />
           <Tabs logo={<CiMobile3 size={20} color="red" />} text="Mobile apps" />
+
           <Tabs
             logo={<LuLayoutDashboard size={20} color="blue" />}
             text="Dashboard"
@@ -42,10 +43,10 @@ const Dashboard = () => {
           />
         </div>
 
-        <div className="relative mx-auto mt-20 grid w-[1240px] grid-cols-3 gap-8">
+        <div className="relative mx-auto mt-20 gap-8 md:grid md:w-[1240px] md:grid-cols-3">
           <div className="flex flex-col gap-8 p-6">
             <p className="text-base font-medium text-gray-500">WORK VIEWS</p>
-            <h1 className="text-3xl  font-bold tracking-wide">
+            <h1 className=" text-2xl font-bold  tracking-wide md:text-3xl">
               A range of views
             </h1>
             <p className="text-lg font-medium leading-7 tracking-wide text-gray-500">
@@ -65,7 +66,7 @@ const Dashboard = () => {
             </p>
             <div className="flex items-center gap-4">
               <a
-                className="text-xl font-semibold tracking-wide text-green-800"
+                className="text-lg font-semibold tracking-wide text-green-800 md:text-xl"
                 href="#"
               >
                 Learn more
@@ -73,9 +74,9 @@ const Dashboard = () => {
               <FaArrowRightLong size={20} color="green" />
             </div>
           </div>
-          <div className="col-span-2 ">
+          <div className="col-span-2  p-10 md:p-0 ">
             <img
-              className="absolute z-20 h-[70%] w-[60%]"
+              className="z-20 hidden h-[70%] w-[60%] md:absolute"
               src={bgImg}
               alt="/"
             />

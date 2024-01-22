@@ -8,18 +8,18 @@ import { MdSettingsSuggest } from "react-icons/md";
 import { MdVideoSettings } from "react-icons/md";
 import { MdOutlineSettingsInputAntenna } from "react-icons/md";
 import SmallMarqueeCard from "./SmallMarqueeCard";
+import MarquueResponsive from "./MarquueResponsive";
 
 const MarqueeSection = () => {
   return (
     <section className="mb-20 w-full ">
-      <main className="mx-auto w-[1240px]">
+      <main className="mx-auto  md:w-[1240px]">
         <Header
           h1="Integrate apps with just a few clicks"
-          p="Connect your existing apps and workflows with pre-made integrations available for 400+ popular apps, plus custom integrations for more advanced users."
+          p="Connect your existing apps and workflows with pre-made integrations available for 400+ popular apps, plus custom for more advanced users."
         />
       </main>
-
-      <div className="mt-16">
+      <div className="mt-16 hidden md:block">
         <Marquee speed={13} pauseOnHover gradient>
           <SmallMarqueeCard
             component={<RxSpeakerLoud size={25} color="red" />}
@@ -156,6 +156,32 @@ const MarqueeSection = () => {
             anchor="Creative"
           />
         </Marquee>
+      </div>
+
+      {/* Responsive section to display */}
+
+      <div className="mt-10 grid grid-cols-7 gap-4 p-5 md:hidden">
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
+        <MarquueResponsive />
       </div>
     </section>
   );

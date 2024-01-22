@@ -9,9 +9,9 @@ const PowerfulEnter = () => {
     <section className="mt-24 w-full ">
       <Header
         h1="Powerful enterprise-ready solutions"
-        p="Wrike is the all-in-one platform that allows teams to scale smoothly with global, industry security, and a wealth of resources to help teams tackle complex work."
+        p="Wrike is the all-in-one platform that allows teams to scale smoothly with global, and a wealth of resources to help teams tackle complex work."
       />
-      <main className="mx-auto mb-16 mt-24 grid w-[1240px] grid-cols-3 gap-10 ">
+      <main className=" mx-auto mb-16 mt-24 flex flex-col gap-10 p-8 md:grid md:w-[1240px] md:grid-cols-3 md:p-2 ">
         <Card
           backG={"white"}
           head="Enterprise-Grade Security"
