@@ -2,6 +2,7 @@ import WrikeLogo from "../assets/wrike-logo-light.svg";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoEarthOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
+import NavResponsive from "./NavResponsive";
 
 const NavBar = () => {
   const [navbarBg, setNavbarBg] = useState("bg-transparent"); // Initial color
@@ -28,9 +29,9 @@ const NavBar = () => {
 
   return (
     <section
-      className={`sticky top-0 z-50 transition-all duration-300 ease-in-out ${navbarBg} shadow-lg`}
+      className={`sticky top-0 z-50  transition-all duration-300 ease-in-out ${navbarBg} shadow-lg`}
     >
-      <nav className="mx-auto max-w-[1240px] text-base font-medium">
+      <nav className=" mx-auto hidden max-w-[1240px] text-base font-medium lg:block">
         <div className="flex items-center justify-between">
           <img src={WrikeLogo} alt="" />
           <div className="flex items-center hover:bg-white">
@@ -64,6 +65,7 @@ const NavBar = () => {
           </button>
         </div>
       </nav>
+      <NavResponsive />
     </section>
   );
 };
