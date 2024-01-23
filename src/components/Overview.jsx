@@ -1,10 +1,10 @@
-import vid from '../assets/video-preview-okr-portfolio.png';
-import Header from './Header';
+import vid from "../assets/video-preview-okr-portfolio.png";
+import Header from "./Header";
 
 const Overview = () => {
   return (
-    <section className="w-full h-auto bg-white text-black mt-32 mb-44">
-      <main className="w-[1240px] mx-auto">
+    <section className="mb-14 mt-10 h-auto w-full bg-white text-black md:mb-44 md:mt-32">
+      <main className="mx-auto md:w-[1240px]">
         <Header
           h1="Drive efficiency across all departments"
           p="Wrike streamlines work processes for maximum efficiency, empowering
@@ -12,27 +12,27 @@ const Overview = () => {
         strategic initiatives, and achieve goals."
         />
 
-        <div className="grid grid-cols-3 gap-8 w-full mx-auto mt-36">
+        <div className="mx-auto mt-16 flex w-full flex-col-reverse gap-8 md:mt-36 md:grid md:grid-cols-3">
           <div className="flex flex-col p-6 ">
-            <h1 className="text-4xl font-bold tracking-wide">
+            <h1 className="text-2xl font-bold tracking-wide md:text-4xl">
               Improve visibility and alignment
             </h1>
-            <p className="text-xl font-medium  text-gray-500 mt-14">
+            <p className="mt-10 text-lg font-medium text-gray-500  md:mt-14 md:text-xl">
               Create a single source of truth and align your teams and
               departments by centralizing all your work in one powerful
               platform.
             </p>
-            <p className="text-xl font-medium  text-gray-500 mt-14">
+            <p className="mt-10 text-lg font-medium text-gray-500  md:mt-14 md:text-xl">
               Create a single source of truth and align your teams and
               departments by centralizing all your work in one powerful
               platform.
             </p>
-            <button className=" w-48 mt-14 py-3 px-6 font-semibold text-base text-white bg-[#04BA71] rounded-md hover:bg-[#007860]">
+            <button className=" mt-14 w-48 rounded-md bg-[#04BA71] px-6 py-3 text-base font-semibold text-white hover:bg-[#007860]">
               Start Free trail
             </button>
           </div>
-          <div className="col-span-2 mx-auto">
-            <img className="ml-20 w-[45rem] " src={vid} alt="image" />
+          <div className="mx-auto md:col-span-2">
+            <img className="p-8 md:ml-20 md:w-[45rem] " src={vid} alt="image" />
           </div>
         </div>
       </main>

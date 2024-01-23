@@ -15,7 +15,7 @@ import PowerfulEnter from "./PowerfulEnter";
 
 const Dashboard = () => {
   return (
-    <section className="mt-60 h-auto w-full bg-[#EBEDF5] pb-24 md:mt-8">
+    <section className="mt-24 h-auto w-full bg-[#EBEDF5] pb-24 md:mt-8">
       <main className="mx-auto mt-12 md:w-[1240px]">
         <Header
           h1="The Most Versatile Work Management Platform™"

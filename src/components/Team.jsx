@@ -51,6 +51,7 @@ const Team = () => {
           img={img1}
         />
       </div>
+
       <ButtonArrow />
     </section>
   );
