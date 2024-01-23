@@ -21,7 +21,7 @@ const Hero = () => {
             <div className="mx-auto flex flex-col md:grid md:max-w-[1240px] md:grid-cols-2">
               <div className="flex h-auto flex-col md:h-[407px] md:w-[600px]">
                 <div className=" w-auto p-4 md:h-[399px] md:p-8">
-                  <h1 className="text-4xl font-semibold leading-[60px] md:text-5xl md:leading-[72px] lg:text-6xl">
+                  <h1 className="text-4xl font-semibold leading-[60px] md:text-5xl md:leading-[65px] lg:text-6xl lg:leading-[72px]">
                     <span className="border-b-[1rem] border-b-yellow-400 ">
                       One{" "}
                     </span>
@@ -70,7 +70,7 @@ const Hero = () => {
           </main>
         </div>
 
-        <main className="mx-auto mt-16 pb-20 md:mt-24 lg:w-[1320px]">
+        <main className="mx-auto mt-16 pb-20 md:mt-24 md:mt-36 md:pb-5 lg:mt-40 lg:w-[1320px] ">
           <div className="gap mx-auto flex flex-wrap justify-evenly gap-6 md:w-[1240px] md:items-center md:gap-0">
             <img src={pg} alt="/" />
             <img src={sega2} alt="/" />
